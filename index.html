@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <title>Calculator</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="frame">
-        <div class="Display">
-                <input class="input" placeholder="0" type="text">
-            <div class="output">Output</div>
-        </div>
-        <div class="PADS">
-            <div class="row1">
-                <button id="seven" class="a">7</button>
-                <button id= "eight" class="a ">8</button>
-                <button id="nine" class="a ">9</button>
-                <button id= "plus" class="a ">+</button>
+    <script src="script.js"></script>
+    <div class="body">
+        <section class="frame">
+            <div class="Display">
+                    <div data-previous-operand="" class="previous-operand">0</div>
+                <div data-current-operand class="current-operand">Output</div>
             </div>
-
-            <div class="row1">
-                <button id="four" class="a ">4</button>
-                <button id="five" class="a ">5</button>
-                <button id="six" class="a ">6</button>
-                <button id="minus" class="a ">-</button>
+            <div class="PADS">
+                <div class="row1">
+                    <button data-all-clear="" id="clear" class="a">AC</button>
+                    <button data-delete="" id="delete" class="a ">DEL</button>
+                    <button data-operation id="zero" class="a ">/</button>
+                </div>
+                <div class="row1">
+                    <button data-number="" id="seven" class="a">7</button>
+                    <button data-number id= "eight" class="a ">8</button>
+                    <button data-number id="nine" class="a ">9</button>
+                    <button data-operation id= "plus" class="a ">+</button>
+                </div>
+    
+                <div class="row1">
+                    <button data-number id="four" class="a ">4</button>
+                    <button data-number id="five" class="a ">5</button>
+                    <button data-number id="six" class="a ">6</button>
+                    <button  id="minus" data-operation class="a ">-</button>
+                </div>
+    
+                <div class="row1">
+                    <button data-number id="one" class="a ">1</button>
+                    <button data-number id="two" class="a ">2</button>
+                    <button data-number id="three" class="a ">3</button>
+                    <button data-operation="" class="a ">*</button>
+                </div>
+    
+                <div class="row1">
+                    <button data-number id="point" class="a ">.</button>
+                    <button data-number id="zero" class="a ">0</button>
+                    <!-- <button id="divide" class="a ">/</button> -->
+                    <button data-equals="" id="equalto" class="a">=</button>
+                </div>
             </div>
-
-            <div class="row1">
-                <button id="one" class="a ">1</button>
-                <button id="two" class="a ">2</button>
-                <button id="three" class="a ">3</button>
-                <button id="multiply" class="a ">*</button>
-            </div>
-
-            <div class="row1">
-                <button id="zero" class="a ">0</button>
-                <button id="point" class="a ">.</button>
-                <button id="divide" class="a ">/</button>
-                <button id="equalto" class="a">=</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
 </body>
 </html>
