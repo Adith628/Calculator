@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: aqua;
+    height: 550px;
+    width:350px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(222, 215, 215);
+}
+.Display{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: block;
+    padding-right: 10px;
+    color: white;
+    text-align: right;
+    height: 120px;
+    width: 340px;
+    border: none;
+    background-color: rgb(221, 75, 53);
+    font-size: 75px;
+}
+
+::placeholder{
+    color: rgb(202, 202, 202);
+}
+
+.input:focus{
+    outline:none;
+}
+.output{
+    color: white;
+    background-color: rgb(221, 75, 53);
+    text-align: right;
+    padding: 5px 8px;
+    height: 40px;
+    font-size: 20px;
+}
+.PADS{
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    background-color:white;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row1{
+    height: 75px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.a{
+    /* margin-left: 4px; */
+    color:rgb(49, 47, 47);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    background-color: rgb(207, 205, 205);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 35px;
+    border: none;
+}
+#equalto{
+    background-color: rgb(221, 75, 53);
+    color: white;
+}
