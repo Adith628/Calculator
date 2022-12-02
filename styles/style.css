@@ -15,6 +15,22 @@
     margin-left: 50px;
 }
 
+.icon{
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.github{
+    height: 50px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+a{
+    height: 10px;
+}
+
 .text{
 
 
