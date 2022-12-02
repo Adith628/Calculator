@@ -11,7 +11,7 @@
 
     color: black;
     z-index: 200;
-    margin-right: 300px;
+    margin-right: 250px;
     margin-left: 50px;
 }
 
@@ -67,10 +67,12 @@ span{
     display: flex;
     margin-top: 50px;
     margin-bottom: 60px;
+    margin-right: 50px;
     flex-direction: column;
-    background-color: rgb(221, 75, 53);
     height: auto;
-    width:350px;
+    min-width:350px ;
+    width: 400px;
+    
     border-radius: 20px;
     overflow: hidden;
     z-index: 100;
@@ -85,8 +87,7 @@ body{
 .body{
     font-family: Oswald;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-around;
     overflow: hidden;
 
 }
@@ -95,28 +96,21 @@ body{
     flex-direction: column;
     padding-right: 5px;
     padding-left: 5px;
+    background-color: rgb(221, 75, 53);
 }
 
-.previous-operand{
-    display: block;
-    padding-right: 10px;
+.current-operand {
+    display: inline;
+    padding-right: 15px;
     color: white;
     text-align: right;
     height: 120px;
-    width: 340px;
     border: none;
     background-color: rgb(221, 75, 53);
     font-size: 75px;
 }
 
-::placeholder{
-    color: rgb(202, 202, 202);
-}
-
-.input:focus{
-    outline:none;
-}
-.current-operand{
+.previous-operand{
     color: white;
     background-color: rgb(221, 75, 53);
     text-align: right;
@@ -124,11 +118,12 @@ body{
     height: 40px;
     font-size: 20px;
 }
+
 .PADS{
     flex: 1;
     padding: 5px;
     display: flex;
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.403);
     flex-direction: column;
     justify-content: space-around;
 }
@@ -149,7 +144,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 75px;
-    background-color: rgb(207, 205, 205);
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     font-weight:500 ;
     font-size: 30px;
@@ -173,7 +168,7 @@ body{
 }
 
 
-.custom-shape-divider-top-1669989396 {
+.custom-shape-divider-top-1670000414 {
     position: absolute;
     top: 0;
     left: 0;
@@ -183,14 +178,15 @@ body{
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1669989396 svg {
+.custom-shape-divider-top-1670000414 svg {
     position: relative;
     display: block;
-    width: calc(145% + 1.3px);
-    height: 414px;
+    width: calc(171% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1669989396 .shape-fill {
-    fill: #eeeeee;
+.custom-shape-divider-top-1670000414 .shape-fill {
+    fill: #F4F4F4;
 }
 
