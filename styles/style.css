@@ -4,6 +4,65 @@
 }
 
 
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: black;
+    z-index: 200;
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+.text{
+
+
+    position: relative;
+    margin-bottom: 400px;
+}
+
+.javascript{
+    color: rgb(221, 75, 53) ;
+    font-size: 90px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+span{
+    font-size: 150px;
+}
+
+.html{
+    font-size: 25px;
+    position: absolute;
+    font-weight: bold;
+    padding-left: 10px;
+    top: 90px;
+    left: 38px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.circle{
+    position: absolute;
+    background-color: white;
+    height: 270px;
+    width: 270px;
+    border-radius: 135px;
+    top: 0px;
+    left: -35px;
+    z-index: -2;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.calc{
+    position: absolute;
+    font-size: 25px;
+    right: 80px;
+    bottom: 10px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
 .frame{
     display: flex;
     margin-top: 50px;
@@ -12,13 +71,15 @@
     background-color: rgb(221, 75, 53);
     height: auto;
     width:350px;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
+    z-index: 100;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 
 }
 body{
 
-    background-color: gray;
+    background-image: linear-gradient(360deg,#fc4a1a,#f7b733);
 
 }
 .body{
@@ -33,6 +94,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-right: 5px;
+    padding-left: 5px;
 }
 
 .previous-operand{
@@ -92,6 +154,11 @@ body{
     font-weight:500 ;
     font-size: 30px;
     border: none;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.a:hover{
+    transform: scale(1.11);
 }
 #equalto{
     background-color: rgb(221, 75, 53);
@@ -103,5 +170,27 @@ body{
     background-color: rgb(221, 75, 53);
     color: white;
     width: 150px;
+}
+
+
+.custom-shape-divider-top-1669989396 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669989396 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 414px;
+}
+
+.custom-shape-divider-top-1669989396 .shape-fill {
+    fill: #eeeeee;
 }
 
